@@ -1,0 +1,27 @@
+/* цвет основного фона
+background: #E5E5E5
+цвет футера
+background: #2F303A
+цвет  секции "наша команда"
+background: #F5F4FA 
+ цвет заголовков
+ color: #212121
+  цвет параграфов
+  color: #757575
+  цвет h1
+  color: #FFFFFF 
+  logo WebStudio
+  color1: #000000
+  color2: #2196F3
+  цвет тел и почты в футере
+  color: rgba(255, 255, 255, 0.6)
+  #E5E5E5;
+  */
+
+:root {
+  --header-color: #212121;
+  --primary-text-color: #757575;
+  --primary-title-color: #ffffff;
+  --accent-color: #2196f3;
+  --background-hero-footer: #2f303a;
+}
