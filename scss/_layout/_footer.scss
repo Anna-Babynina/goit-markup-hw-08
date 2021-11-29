@@ -2,6 +2,8 @@
   background-color: var(--background-hero-footer);
   padding-top: 60px;
   padding-bottom: 60px;
+  // margin-right: auto;
+  // margin-left: auto;
 }
 
 .logo-footer {
@@ -13,9 +15,14 @@
 .logo-footer-bottom {
   display: block;
   font-family: "raleway";
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--header-color);
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .contacts-tel .link {
@@ -38,26 +45,38 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
 }
 
-.contacts-block:not(:last-child) {
-  margin-bottom: 9px;
+.contacts:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
+
 .footer-list {
   display: flex;
-  justify-content: center;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 .footer-title {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   font-style: normal;
-  width: 145px;
-  height: 16px;
+  text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
 }
+
 .footer-item {
   width: 44px;
   height: 44px;
@@ -86,16 +105,49 @@
 }
 
 .footer-conteiner {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+  @media screen and (min-width: 780px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
+
 .footer-left {
-  margin-right: 70px;
+  @media screen and (min-width: 780px) {
+    margin-left: 76px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .footer-center {
-  display: block;
+  @media screen and (min-width: 480px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 780px) {
+    margin-right: 89px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .footer-right {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
