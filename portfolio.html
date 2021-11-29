@@ -44,6 +44,14 @@
           </ul>
         </nav>
 
+        <!-- Burger-button + Mobile-menu -->
+
+            <button type="button" class="burger-btn " data-menu-open>
+              <svg class="burger-btn-icon" width="40" height="40">
+                <use href="./images/burger-menu.svg#icon-burger-menu"></use>
+              </svg>
+           </button>
+
         <ul class="auth-nav list">
           <li class="connect-item envelope-header">
             <a href="mailto:info@devstudio.com" class="link mailto-icon">
@@ -63,6 +71,58 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu is-open" data-menu>
+            <button type="button" class="mobile-menu-btn" data-menu-close>
+                <svg class="mobile-btn-icon" width="40" height="40">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+           </button>
+
+           <div class="mobile-menu-top">
+              <ul class="mobile-nav-menu">
+                <li class="mobile-menu-item">
+                  <a href="./index.html" class="mobile-menu-link link">Студия</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="./portfolio.html" class="mobile-menu-link current link">Портфолио </a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link">Контакты</a>
+                </li>
+              </ul>
+           </div>
+
+           <div class="mobil-menu-bottom">
+                <ul class="mobile-auth-nav">
+                    <li class="mobile-connect-tel">
+                        <a href="tel:+380961111111" class="link">
+                          +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-connect-emeil">
+                      <a href="mailto:info@devstudio.com" class="link">
+                          info@devstudio.com
+                      </a>
+                    </li>
+                </ul>
+              
+              
+                <ul class="mobile-social-link">
+                    <li class="mobile-link ">
+                      <a href="#" class="mobile-link-menu link">Instagram</a>
+                    </li>
+                    <li class="mobile-link">
+                      <a href="#" class="mobile-link-menu link">Twitter</a>
+                    </li>
+                    <li class="mobile-link">
+                      <a href="#" class="mobile-link-menu link">Facebook</a>
+                    </li>
+                    <li class="mobile-link">
+                      <a href="#" class="mobile-link-menu link">LinkedIn</a>
+                    </li>
+                </ul>
+          </div>
+          <!-- END mobile-menu -->
     </header>
     <main>
       <section class="portfolio">
@@ -391,23 +451,23 @@
                     <source
                       media="(min-width:1200px)"
                       srcset="
-                        ./images/portfolio-desktop/restaurant.jpg,
-                        ./images/portfolio-desktop/restaurant@2x.jpg
+                        ./images/portfolio-desktop/label.jpg,
+                        ./images/portfolio-desktop/label@2x.jpg
                       "
                     />
 
                     <source
                       media="(min-width:768px)"
                       srcset="
-                        ./images/tablet-portfolio/restaurant.jpg,
-                        ./images/tablet-portfolio/restaurant@2x.jpg
+                        ./images/tablet-portfolio/label.jpg,
+                        ./images/tablet-portfolio/label@2x.jpg
                       "
                     />
                     <source
                       media="(min-width:480px)"
                       srcset="
-                        ./images/portfolio-mobile/restaurant.jpg,
-                        ./images/portfolio-mobile/restaurant@2x.jpg
+                        ./images/portfolio-mobile/label.jpg,
+                        ./images/portfolio-mobile/label@2x.jpg
                       "
                     />
                     <img class="galary-img" src="#" alt="label" />
@@ -540,5 +600,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
