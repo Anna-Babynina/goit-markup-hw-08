@@ -40,14 +40,10 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-// .team-item-block:not(:last-child) {
-//   @media screen and (min-width: 1200px) {
-//     flex-basis: calc((100%-4 * 30px) / 4);
-//     margin-right: 30px;
-//   }
-// }
-.team-item-block {
-  margin-bottom: 30px;
+.team-item-block:not(:last-child) {
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
 }
 
 .team-list {
@@ -63,7 +59,7 @@
   }
 }
 
-.team-list-block {
+.team-list {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -76,6 +72,7 @@
 
   @media screen and (min-width: 768px) {
     width: 354px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
